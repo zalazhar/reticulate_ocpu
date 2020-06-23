@@ -1,1 +1,1 @@
-print(va)
+print(3*2)

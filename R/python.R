@@ -9,5 +9,12 @@ executepyth <- function (string) {
 
 }
 
+test <- function () {
+
+klm = data.frame(test = c(1,2,3))
+write.csv(klm, "klm.csv")
+
+}
+
 
 

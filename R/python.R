@@ -5,7 +5,7 @@ fileConn <- file("output.txt")
 writeLines(string, fileConn)
 close(fileConn)
 
-reticulate::py_run_file("output.txt")
+capture.output(reticulate::py_run_file("output.txt"))
 
 }
 

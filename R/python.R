@@ -22,7 +22,7 @@ print(df)
 print(df.to_csv('out.csv',index= False))"
 
 test1 <- "
-import numpy as np"
+import pandas as np"
 
 cat(ocpupyt::executepyth(test1))
 

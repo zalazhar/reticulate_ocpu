@@ -1,11 +1,8 @@
 #' @export
 executepyth <- function (string) {
 
-  fileConn <- file("output.txt")
-  writeLines(string, fileConn)
-  close(fileConn)
-
-  reticulate::py_run_file("output.txt")
+  library(reticulate)
+  py_capture_output(py_run_string(string))
 
 }
 
@@ -17,6 +14,6 @@ executer <- function(string) {
 
 saveout <- function(string){
 
-  return (caputure.output(executepyth(string)))
+  return (capture.output(executepyth(string)))
 
 }

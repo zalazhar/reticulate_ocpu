@@ -21,7 +21,10 @@ df = pd.DataFrame(data = d)
 print(df)
 print(df.to_csv('out.csv',index= False))"
 
-cat(ocpupyt::executepyth(test))
-cat(class(py$df))
+test1 <- "
+import numpy as np"
+
+cat(ocpupyt::executepyth(test1))
+
 
 }

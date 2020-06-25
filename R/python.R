@@ -1,11 +1,11 @@
 #' @export
 executepyth <- function (string) {
 
-fileConn <- file("output.txt")
-writeLines(string, fileConn)
-close(fileConn)
+  fileConn <- file("output.txt")
+  writeLines(string, fileConn)
+  close(fileConn)
 
-reticulate::py_run_file("output.txt")
+  reticulate::py_run_file("output.txt")
 
 }
 
@@ -14,3 +14,9 @@ executer <- function(string) {
   cat(string)
 }
 
+
+saveout <- function(string){
+
+  return (caputure.output(executepyth(string)))
+
+}
